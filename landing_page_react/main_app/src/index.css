@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+  background-color: rgb(255, 153, 0);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header{
+  display: flex;
+  background: url('../public/good_pizza.jpeg') no-repeat;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: -200px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  min-width: 400px;
+  width: 50%;
+  height: 50%;
+  font-family: 'Montserrat','Arial';
+}
+
+.header_text p:first-child{
+  font-weight: 1000;
+  color: white;
+  text-shadow: 2px 0 2px #000, 
+  0 2px 2px #000, 
+  -2px 0 2px #000, 
+  0 -2px 2px #000;
+  font-size: 35px;
+}
+
+.header_text p:last-child{
+  font-weight: 700;
+  color: white;
+  text-shadow: 1.5px 0 1.5px #000, 
+  0 1.5px 1.5px #000, 
+  -1.5px 0 1.5px #000, 
+  0 -1.5px 1.5px #000;
+  font-size: 25px;
+}
+
+.bestShiefs{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.bestShiefsText{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 50px;
+  border: 5px solid red;
+}
+
+.bestShiefs span{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1.5px 0 1.5px #000, 
+  0 1.5px 1.5px #000, 
+  -1.5px 0 1.5px #000, 
+  0 -1.5px 1.5px #000;
+}
+
+.bestShiefs img{
+  height: 300px;
+  transform: scaleX(-1);
+  transition: 0.25s;
+}
+
+.rider{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat','Arial';
+}
+
+.rider img{
+  height: 150px;
+  transform: scaleX(-1)
+}
+.rider span{
+  justify-self: center;
+  align-self: center;
+  margin-left: 100px;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1.5px 0 1.5px #000, 
+  0 1.5px 1.5px #000, 
+  -1.5px 0 1.5px #000, 
+  0 -1.5px 1.5px #000;
+}
+
+.bestPizza {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bestPizza img{
+  height: 300px;
+  transition: 0.25s;
+  margin-right: 20px;
+}
+
+.bestPizzaText{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 50px;
+  border: 5px solid red;
+}
+
+.bestPizza span{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1.5px 0 1.5px #000, 
+  0 1.5px 1.5px #000, 
+  -1.5px 0 1.5px #000, 
+  0 -1.5px 1.5px #000;
+}
+
+.dostavka{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.dostavka img{
+  height: 500px;
+}
+
+.dostavkaText{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 50px;
+  border: 5px solid red;
+  width: 50%;
+  margin-bottom: 100px;
+}
+.dostavka span{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1.5px 0 1.5px #000, 
+  0 1.5px 1.5px #000, 
+  -1.5px 0 1.5px #000, 
+  0 -1.5px 1.5px #000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media screen and (max-width: 900px) {
+  .bestShiefs img{
+    height: 200px;
+    transform: scaleX(-1);
+    margin-right: 10vw;
+    transition: 0.25s;
+  }
+
+  .bestShiefs span{
+    justify-self: center;
+    align-self: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1.5px 0 1.5px #000, 
+    0 1.5px 1.5px #000, 
+    -1.5px 0 1.5px #000, 
+    0 -1.5px 1.5px #000;
+  }
+
+  .bestPizza img{
+    height: 200px;
+    transition: 0.25s;
+  }
+
+  .bestPizza span{
+    justify-self: center;
+    align-self: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1.5px 0 1.5px #000, 
+    0 1.5px 1.5px #000, 
+    -1.5px 0 1.5px #000, 
+    0 -1.5px 1.5px #000;
+  }
+  .dostavka img{
+    height: 300px;
+    transition: 0.25s;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bestPizza img{
+    height: 100px;
+    transition: 0.25s;
+  }
+  .dostavka img{
+    height: 200px;
+    transition: 0.25s;
+  }
+}
